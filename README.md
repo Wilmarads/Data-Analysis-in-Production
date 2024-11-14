@@ -17,7 +17,7 @@ Responder às perguntas de negócio da Cafeteria Aroma Café:
 
 O MIndMape de Hipóteses foi crucial para entendermos quais elementos estavam envolvidos neste negócio em específico permitindo criar suposições voltadas ao entendimento do cenário apresentado no momento, bem como poderíamos obter as tendências para o próximo mês. Além de poder analisar os limites da análise em decorrência da base de dados acessível.
 
-!img[!Aroma_Caf.png]
+![](img/Aroma_Caf.png)
 
 # Estrutura do Projeto
 
@@ -29,8 +29,7 @@ Em projetos de análise de dados são necessárias algumas etapas: conhecimento 
 Após das análises é importante conhecer um pouco mais sobre os dados entregues para análise, um arquivo de planilha google contendo 149.117 linhas e 18 colunas. Este dataset possui uma granularidade de 1 para n, ou seja, 1 transação pode conter mais de 1 produto. Segue descrição das colunas.
 
 
-Coluna
-Descrição
+| Coluna:------ | Descrição:-------
 transaction_id
 Id único da transação
 transaction_date
