@@ -29,43 +29,26 @@ Em projetos de análise de dados são necessárias algumas etapas: conhecimento 
 Após das análises é importante conhecer um pouco mais sobre os dados entregues para análise, um arquivo de planilha google contendo 149.117 linhas e 18 colunas. Este dataset possui uma granularidade de 1 para n, ou seja, 1 transação pode conter mais de 1 produto. Segue descrição das colunas.
 
 
-| Coluna:------ | Descrição:-------
-transaction_id
-Id único da transação
-transaction_date
-Data da transação
-transaction_time
-Horário da transação
-store_id
-Id único da loja
-store_location
-Localização
-product_id
-Id do produto
-transaction_qty
-Quantidade de produtos
-unit_price
-Preço unitário
-Total_Bill
-Total da venda
-product_category
-Categoria do produto
-product_type
-Tipo do produto
-product_detail
-Detalhe do produto
-Size
-Tamanho
-Month Name
-Nome do mês
-Day Name
-Nome do dia
-Hour
-Hora
-Month
-Mês
-Day of Week
-Dia da semana
+| Coluna | Descrição |
+|:------ |:-------|
+|transaction_id |Id único da transação |
+|transaction_date | Data da transação|
+|transaction_time |Horário da transação|
+|store_id |Id único da loja|
+|store_location |Localização|
+|product_id |Id do produto|
+|transaction_qty | Quantidade de produtos|
+|unit_price | Preço unitário|
+|Total_Bill| Total da venda|
+|product_category | Categoria do produto|
+|product_type | Tipo do produto|
+|product_detail|Detalhe do produto|
+|Size |  Tamanho|
+|Month Name | Nome do mês|
+|Day Name |Nome do dia |
+|Hour | Hora | 
+|Month | Mês |
+|Day of Week | Dia da semana|
 
 
 Neste caso em específico não houve a necessidade de limpeza ou transformação dos dados. Na análise exploratória dos dados foi possível delimitar as hipóteses com base nas variáveis disponíveis, ou seja, limitando-nos às vendas, por produto, por loja, por categoria, por mês, por hora, por tamanho e demais possibilidades. Portanto, com base na descrição já podemos adiantar que não é possível analisar o impacto de lojas adjacentes sobre o faturamento, pois não temos qualquer dados que remeta a concorrência.
@@ -117,15 +100,15 @@ Gráficos interativos para facilitar a compreensão e comunicação dos insights
 ### Análise descritiva
 #### Relatório
 
-Com base no faturamento há uma tendência de crescimento mensal chegando ao final do semestre com um aumento total de quase 20%.
-O faturamento sofre uma queda de 7% em fevereiro. Volta a subir em 29% em março e mantém uma média de crescimento até o final do semestre de 22%.
-O faturamento por loja é muito semelhante.
-O faturamento por loja segue a mesma tendência do faturamento geral. Ambas as lojas sofrem queda de vendas em fevereiro e depois retoma o aumento mensalmente.
-As primeiras e as intermediárias, são responsáveis por quase 80% do faturamento.
-Sábados e Domingos apresentam crescimento mês a mês. Segundas e terças apresentam queda em fevereiro, seguido de aumento nos meses seguintes e queda no último mês. A quarta apresenta aumento até maio, apresentando queda em junho. A quinta e a sexta, apresentam aumento até março e queda em abril, seguido de aumento nos meses seguintes.
-As categorias de produtos responsáveis por 80% do faturamento mensal são o Tea e o Coffe
-As categorias coffe, tea, breakin e drinkins apresentam comportamento mensal semelhante ao longos dos meses. Já as demais categorias oscilam muito no mês a mês.
-A rede de cafeterias estão indo bem apesar de oscilações de faturamento mensal, assim como as oscilações em diferentes dias da da semana.
+1. Com base no faturamento há uma tendência de crescimento mensal chegando ao final do semestre com um aumento total de quase 20%.
+2. O faturamento sofre uma queda de 7% em fevereiro. Volta a subir em 29% em março e mantém uma média de crescimento até o final do semestre de 22%.
+3. O faturamento por loja é muito semelhante.
+4. O faturamento por loja segue a mesma tendência do faturamento geral. Ambas as lojas sofrem queda de vendas em fevereiro e depois retoma o aumento mensalmente.
+5. As primeiras e as intermediárias, são responsáveis por quase 80% do faturamento.
+6. Sábados e Domingos apresentam crescimento mês a mês. Segundas e terças apresentam queda em fevereiro, seguido de aumento nos meses seguintes e queda no último mês. A quarta apresenta aumento até maio, apresentando queda em junho. A quinta e a sexta, apresentam aumento até março e queda em abril, seguido de aumento nos meses seguintes.
+7. As categorias de produtos responsáveis por 80% do faturamento mensal são o Tea e o Coffe
+8. As categorias coffe, tea, breakin e drinkins apresentam comportamento mensal semelhante ao longos dos meses. Já as demais categorias oscilam muito no mês a mês.
+9. A rede de cafeterias estão indo bem apesar de oscilações de faturamento mensal, assim como as oscilações em diferentes dias da da semana.
 
 
 
@@ -133,29 +116,29 @@ A rede de cafeterias estão indo bem apesar de oscilações de faturamento mensa
 ### Análise Diagnóstica
 #### Relatório
 
-O faturamento apresenta forte correlação com os vários tamanhos dos produtos. Portanto, o tamanho dos produtos não impacta negativamente no faturamento.
-A localização das lojas também apresenta importante correlação com o faturamento e portanto não temos unidades que sejam impactadas negativamente pela localidade.
-Com relação ao preço médio unitário não houve correlação forte, mas ela é inversamente proporcional em alguns meses. Ou seja, enquanto o preço médio unitário reduziu em alguns meses, o faturamento aumentou. Isto pode indicar que a loja acabou vendendo mais produtos baratos e em maior volume. Porém as quedas e aumentos não se dão na mesma proporção do crescimento e queda no mês coincidente em relação ao faturamento.
-O mesmo comportamento da análise anterior segue para a análise de preço médio total.
-Já era de se esperar também que o aumento de produtos aumentasse o faturamento dada a forte correlação existente.
+1. O faturamento apresenta forte correlação com os vários tamanhos dos produtos. Portanto, o tamanho dos produtos não impacta negativamente no faturamento.
+2. A localização das lojas também apresenta importante correlação com o faturamento e portanto não temos unidades que sejam impactadas negativamente pela localidade.
+3. Com relação ao preço médio unitário não houve correlação forte, mas ela é inversamente proporcional em alguns meses. Ou seja, enquanto o preço médio unitário reduziu em alguns meses, o faturamento aumentou. Isto pode indicar que a loja acabou vendendo mais produtos baratos e em maior volume. Porém as quedas e aumentos não se dão na mesma proporção do crescimento e queda no mês coincidente em relação ao faturamento.
+4. O mesmo comportamento da análise anterior segue para a análise de preço médio total.
+5. Já era de se esperar também que o aumento de produtos aumentasse o faturamento dada a forte correlação existente.
 
 ### Análise Preditiva
 #### Relatório
 
-Considerando uma janela de 30 dias encontramos uma previsão diária de R$457,00.
-Considerando a margem de erro de 8,6% a previsão pode ser de 8% para mais ou para menos;
-O faturamento total previsto para os próximos 30 dias é de R$185.495,01. Um pouco abaixo faturamento para os mesmo 30 dias considerando-se apenas a tendência, mas ainda dentro da margem de erro de 8%;
-Estes 8% refere-se a uma janela de média móvel de 30 dias que foi escolhida devido a diferença mínima percentual, comparada a janela de 60 dias. 
-Levando-se em consideração a série temporal de apenas 6 meses, quanto menor o erro e menor a janela de média móvel de tempo, melhor.
-
+1. Considerando uma janela de 30 dias encontramos uma previsão diária de R$457,00.
+2. Considerando a margem de erro de 8,6% a previsão pode ser de 8% para mais ou para menos;
+3. O faturamento total previsto para os próximos 30 dias é de R$185.495,01. Um pouco abaixo faturamento para os mesmo 30 dias considerando-se apenas a tendência, mas ainda dentro da margem de erro de 8%;
+4. Estes 8% refere-se a uma janela de média móvel de 30 dias que foi escolhida devido a diferença mínima percentual, comparada a janela de 60 dias. 
+5. Levando-se em consideração a série temporal de apenas 6 meses, quanto menor o erro e menor a janela de média móvel de tempo, melhor.
+ 
 ### Análise Prescritiva
 #### Relatório
 
-Incentivar o aumento de produtos únicos: Considerando o nosso p-valor de 5%, no cenário 3, podemos afirmar que a cada produto único vendido aumentamos o faturamento em quase R$2.700,00. A recomendação é de que há uma possibilidade de aumento do faturamento ao aumentar a quantidade de produtos únicos vendidos
-Reduzir categorias: Ainda com base no cenário 3, para a categoria única, temos que a cada venda de um produto de uma categoria única há uma redução do faturamento em quase R$1.850,00. Ou seja, podemos recomendar, que há uma possibilidade de reduzir o número de categorias para aumentar o faturamento e focar nas categorias que mais vendem.
-Manter preços médios: Outro ponto de observação são os preços médios, pois eles reagem negativamente ao faturamento. Sendo assim, a cada unidade de preço médio aumentado eu tenho uma redução no faturamento em torno de quase R$742,00.
-Reduzir tipo único de produtos: Apesar do p-valor estar alto, existe uma considerável correlação entre produtos únicos e faturamento. Portanto, seria interessante testar que ao reduzir os tipos únicos eu teria uma aumento em torno de R$2.367,00 no faturamento.
-Os cenários 1 e 2 foram descartados, devido aos valores de p-valor que não traziam confiança considerando as variáveis analisadas pela regressão linear. 
+1. Incentivar o aumento de produtos únicos: Considerando o nosso p-valor de 5%, no cenário 3, podemos afirmar que a cada produto único vendido aumentamos o faturamento em quase R$2.700,00. A recomendação é de que há uma possibilidade de aumento do faturamento ao aumentar a quantidade de produtos únicos vendidos
+2. Reduzir categorias: Ainda com base no cenário 3, para a categoria única, temos que a cada venda de um produto de uma categoria única há uma redução do faturamento em quase R$1.850,00. Ou seja, podemos recomendar, que há uma possibilidade de reduzir o número de categorias para aumentar o faturamento e focar nas categorias que mais vendem.
+3. Manter preços médios: Outro ponto de observação são os preços médios, pois eles reagem negativamente ao faturamento. Sendo assim, a cada unidade de preço médio aumentado eu tenho uma redução no faturamento em torno de quase R$742,00.
+4. Reduzir tipo único de produtos: Apesar do p-valor estar alto, existe uma considerável correlação entre produtos únicos e faturamento. Portanto, seria interessante testar que ao reduzir os tipos únicos eu teria uma aumento em torno de R$2.367,00 no faturamento.
+5. Os cenários 1 e 2 foram descartados, devido aos valores de p-valor que não traziam confiança considerando as variáveis analisadas pela regressão linear. 
 
 # Conclusões
 
@@ -170,9 +153,9 @@ Com a análise prescritiva entendemos que várias categorias podem reduzir o fat
 
 # Próximos Passos
 
-Automação do relatório para o CEO ter acesso rápido a estas análises.
-Aplicar novas medidas estatísticas e de machine learning.
-Avaliar uma base maior de dados.
+- Automação do relatório para o CEO ter acesso rápido a estas análises.
+- Aplicar novas medidas estatísticas e de machine learning.
+- Avaliar uma base maior de dados.
 
 
 
