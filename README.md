@@ -21,7 +21,7 @@ O MIndMape de Hipóteses foi crucial para entendermos quais elementos estavam en
 
 # Estrutura do Projeto
 
-Descrição dos dados
+### Descrição dos dados
 
 Em projetos de análise de dados são necessárias algumas etapas: conhecimento do negócio, entender o problema de negócio, limpeza e transformação dos dados, análise exploratória, criação de variáveis, aplicação de algoritmos de previsão, extração de insights.
 
@@ -73,8 +73,8 @@ Neste caso em específico não houve a necessidade de limpeza ou transformação
 
 
 
-Estrutura por análise
-1. Análise Descritiva
+### Estrutura por análise
+####1. Análise Descritiva
 Objetivo: Compreender o panorama atual dos dados e obter uma visão geral dos principais indicadores.
 Método: Exploração inicial e resumo estatístico dos dados.
 Principais Métricas Analisadas:
@@ -82,7 +82,7 @@ Distribuições de Variáveis: Análise de distribuição de dados relevantes, c
 Tendências Temporais: Comportamento dos principais KPIs ao longo do tempo.
 Segmentação: Análise por categorias, locais, demografia ou outros subgrupos relevantes.
 Resultados: Identificação dos períodos de alta e baixa, itens com maior e menor popularidade, sazonalidade e comportamentos cíclicos.
-2. Análise Diagnóstica
+####2. Análise Diagnóstica
 Objetivo: Investigar as causas dos padrões identificados na análise descritiva.
 Método: Aplicação de análises correlacionais e testes de hipóteses para validar relações entre variáveis.
 Abordagens Utilizadas:
@@ -90,14 +90,14 @@ Correlação: Identificação de variáveis que influenciam diretamente os resul
 Segmentação Detalhada: Exploração das diferenças de comportamento entre categorias ou locais específicos.
 Regressão: Modelos de regressão para quantificar o impacto de variáveis independentes sobre as dependentes.
 Resultados: Descoberta dos principais fatores que impulsionam ou reduzem o desempenho, ajudando a entender o que leva a flutuações nos indicadores.
-3. Análise Preditiva
+####3. Análise Preditiva
 Objetivo: Prever o comportamento futuro com base nos dados históricos.
 Método: Aplicação de modelos de previsão de regressão XLMiner Analysis ToolPak
 Modelos e Técnicas:
 Modelagem de Séries Temporais: Aplicação de algoritmos de regressão para prever tendências futuras.
 Teste e Validação: Avaliação da acurácia dos modelos através de métricas de erro MAPE e RMSE
 Resultados: Projeção de KPIs futuros, como vendas ou faturamento, para o próximo mês, proporcionando insights sobre tendências que podem auxiliar no planejamento estratégico.
-4. Análise Prescritiva
+####4. Análise Prescritiva
 Objetivo: Gerar recomendações práticas para maximizar resultados futuros ou mitigar problemas.
 Método: Simulação de cenários e análise de impacto de diferentes estratégias.
 Abordagens:
@@ -115,8 +115,8 @@ Gráficos interativos para facilitar a compreensão e comunicação dos insights
 
 # Resultados
 
-Análise descritiva
-Relatório
+###Análise descritiva
+####Relatório
 
 Com base no faturamento há uma tendência de crescimento mensal chegando ao final do semestre com um aumento total de quase 20%.
 O faturamento sofre uma queda de 7% em fevereiro. Volta a subir em 29% em março e mantém uma média de crescimento até o final do semestre de 22%.
@@ -131,9 +131,8 @@ A rede de cafeterias estão indo bem apesar de oscilações de faturamento mensa
 
 
 
-Análise Diagnóstica
-
-Relatório
+###Análise Diagnóstica
+####Relatório
 
 O faturamento apresenta forte correlação com os vários tamanhos dos produtos. Portanto, o tamanho dos produtos não impacta negativamente no faturamento.
 A localização das lojas também apresenta importante correlação com o faturamento e portanto não temos unidades que sejam impactadas negativamente pela localidade.
@@ -141,8 +140,8 @@ Com relação ao preço médio unitário não houve correlação forte, mas ela 
 O mesmo comportamento da análise anterior segue para a análise de preço médio total.
 Já era de se esperar também que o aumento de produtos aumentasse o faturamento dada a forte correlação existente.
 
-Análise Preditiva
-Relatório
+###Análise Preditiva
+####Relatório
 
 Considerando uma janela de 30 dias encontramos uma previsão diária de R$457,00.
 Considerando a margem de erro de 8,6% a previsão pode ser de 8% para mais ou para menos;
@@ -150,8 +149,8 @@ O faturamento total previsto para os próximos 30 dias é de R$185.495,01. Um po
 Estes 8% refere-se a uma janela de média móvel de 30 dias que foi escolhida devido a diferença mínima percentual, comparada a janela de 60 dias. 
 Levando-se em consideração a série temporal de apenas 6 meses, quanto menor o erro e menor a janela de média móvel de tempo, melhor.
 
-Análise Prescritiva
-Relatório
+###Análise Prescritiva
+####Relatório
 
 Incentivar o aumento de produtos únicos: Considerando o nosso p-valor de 5%, no cenário 3, podemos afirmar que a cada produto único vendido aumentamos o faturamento em quase R$2.700,00. A recomendação é de que há uma possibilidade de aumento do faturamento ao aumentar a quantidade de produtos únicos vendidos
 Reduzir categorias: Ainda com base no cenário 3, para a categoria única, temos que a cada venda de um produto de uma categoria única há uma redução do faturamento em quase R$1.850,00. Ou seja, podemos recomendar, que há uma possibilidade de reduzir o número de categorias para aumentar o faturamento e focar nas categorias que mais vendem.
