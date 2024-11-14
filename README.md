@@ -17,6 +17,7 @@ Responder às perguntas de negócio da Cafeteria Aroma Café:
 
 O MIndMape de Hipóteses foi crucial para entendermos quais elementos estavam envolvidos neste negócio em específico permitindo criar suposições voltadas ao entendimento do cenário apresentado no momento, bem como poderíamos obter as tendências para o próximo mês. Além de poder analisar os limites da análise em decorrência da base de dados acessível.
 
+!img[!Aroma_Caf.png]
 
 # Estrutura do Projeto
 
