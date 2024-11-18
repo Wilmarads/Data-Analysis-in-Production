@@ -65,7 +65,7 @@ Distribuições de Variáveis: Análise de distribuição de dados relevantes, c
 - Segmentação: Análise por categorias, localidade, tempo, dias da semana e meses.
 - Resultados: Identificação dos períodos de alta e baixa, itens com maior e menor popularidade.
   
-####2. Análise Diagnóstica
+#### 2. Análise Diagnóstica
 - Objetivo: Investigar as causas dos padrões identificados na análise descritiva.
 - Método: Aplicação de análises correlacionais e testes de hipóteses para validar relações entre variáveis.
 - Abordagens Utilizadas:
