@@ -57,41 +57,40 @@ Neste caso em específico não houve a necessidade de limpeza ou transformação
 
 ### Estrutura por análise
 #### 1. Análise Descritiva
-Objetivo: Compreender o panorama atual dos dados e obter uma visão geral dos principais indicadores.
-Método: Exploração inicial e resumo estatístico dos dados.
-Principais Métricas Analisadas:
-Distribuições de Variáveis: Análise de distribuição de dados relevantes, como vendas, categorias de produtos e períodos de tempo.
-Tendências Temporais: Comportamento dos principais KPIs ao longo do tempo.
-Segmentação: Análise por categorias, locais, demografia ou outros subgrupos relevantes.
-Resultados: Identificação dos períodos de alta e baixa, itens com maior e menor popularidade, sazonalidade e comportamentos cíclicos.
+- Objetivo: Compreender o panorama atual dos dados e obter uma visão geral dos principais indicadores.
+- Método: Exploração inicial e resumo estatístico dos dados. 
+- Principais Métricas Analisadas:
+Distribuições de Variáveis: Análise de distribuição de dados relevantes, como faturamento total da base de dados fornecida, número de categorias de produtos, quantidade de tipo de produtos e tendência para o período de tempo. Aqui, demonstrei com um gráfico de linha o faturamento ao longo do tempo e cards com números importantes da cafeteria. Ainda com gráfico de linha analisei o faturamento ao longo do tempo por loja. Por meio de um gráfico de colunas apresentei o faturamento total por unidade de loja. Além deste, outro gráfico de barras empilhadas foi utilizado para demonstrar o faturamento por dia da semana. Explorei ainda o faturamento mensal por categoria de produto, também, com empilhamento de barras. Por fim, utilizei um gráfico combinado, de linha e colunas, para expor o percentual de faturamento por grupo de horas. Por fim, fiz uso de um gráfico de de colunas, onde fpi possível observar ao longo dos meses o desempenho percentual das categorias vendidas.
+- Tendências Temporais: Comportamento dos principais KPIs ao longo do tempo.
+- Segmentação: Análise por categorias, localidade, tempo, dias da semana e meses.
+- Resultados: Identificação dos períodos de alta e baixa, itens com maior e menor popularidade.
 ####2. Análise Diagnóstica
-Objetivo: Investigar as causas dos padrões identificados na análise descritiva.
-Método: Aplicação de análises correlacionais e testes de hipóteses para validar relações entre variáveis.
-Abordagens Utilizadas:
-Correlação: Identificação de variáveis que influenciam diretamente os resultados.
-Segmentação Detalhada: Exploração das diferenças de comportamento entre categorias ou locais específicos.
-Regressão: Modelos de regressão para quantificar o impacto de variáveis independentes sobre as dependentes.
-Resultados: Descoberta dos principais fatores que impulsionam ou reduzem o desempenho, ajudando a entender o que leva a flutuações nos indicadores.
+- Objetivo: Investigar as causas dos padrões identificados na análise descritiva.
+- Método: Aplicação de análises correlacionais e testes de hipóteses para validar relações entre variáveis.
+- Abordagens Utilizadas:
+- Correlação: Identificação de variáveis que influenciam diretamente os resultados.
+- Segmentação Detalhada: Exploração das diferenças de comportamento por tamanho de produto, por loja, por preço médio unitário e total e por mês.
+- Resultados: Descoberta dos principais fatores que impulsionam ou reduzem o desempenho, ajudando a entender o que leva a flutuações nos indicadores.
 #### 3. Análise Preditiva
-Objetivo: Prever o comportamento futuro com base nos dados históricos.
-Método: Aplicação de modelos de previsão de regressão XLMiner Analysis ToolPak
-Modelos e Técnicas:
-Modelagem de Séries Temporais: Aplicação de algoritmos de regressão para prever tendências futuras.
-Teste e Validação: Avaliação da acurácia dos modelos através de métricas de erro MAPE e RMSE
-Resultados: Projeção de KPIs futuros, como vendas ou faturamento, para o próximo mês, proporcionando insights sobre tendências que podem auxiliar no planejamento estratégico.
+- Objetivo: Prever o comportamento futuro com base nos dados históricos.
+- Método: Aplicação de modelos de previsão de regressão XLMiner Analysis ToolPak
+- Modelos e Técnicas:
+ - Modelagem de Séries Temporais: Aplicação de algoritmos de regressão para prever tendências futuras. Antes de aplicar o algoritmo, relizamos uma média móvel com janelas de 20 até 60 dias para definir os ciclos. Foi analizado a tendência e sazonalidade nos diferentes ciclos adotados.
+ - Teste e Validação: Avaliação da acurácia dos modelos através de métricas de erro MAPE e RMSE.
+- Resultados: Projeção de KPIs futuros, faturamento, para o próximo mês, proporcionando insights sobre tendências que podem auxiliar no planejamento estratégico.
 #### 4. Análise Prescritiva
-Objetivo: Gerar recomendações práticas para maximizar resultados futuros ou mitigar problemas.
-Método: Simulação de cenários e análise de impacto de diferentes estratégias.
-Abordagens:
-Cenários Alternativos: Criação de múltiplos cenários com base nos ajustes de média móvel para avaliar impactos potenciais de diferentes estratégias.
-Análise de Sensibilidade: Identificação de variáveis com maior impacto nos resultados futuros.
-Recomendações Baseadas em Dados: Recomendações práticas derivadas das descobertas anteriores.
-Resultados: Planos de ação sugeridos para aproveitar oportunidades de crescimento ou para conter possíveis quedas.
-Ferramentas Utilizadas
-Modelagem e Previsão:
-Modelos estatísticos de média móvel, tendência, sazonalidade e regressão.
-Visualização:
-Gráficos interativos para facilitar a compreensão e comunicação dos insights no Google Sheets.
+- Objetivo: Gerar recomendações práticas para maximizar resultados futuros ou mitigar problemas.
+- Método: Simulação de cenários e análise de impacto de diferentes estratégias.
+- Abordagens:
+ - Cenários Alternativos: Criação de múltiplos cenários com base nos ajustes de média móvel para avaliar impactos potenciais de diferentes estratégias.
+   Análise de Sensibilidade: Identificação de variáveis com maior impacto nos resultados futuros.
+   Recomendações Baseadas em Dados: Recomendações práticas derivadas das descobertas anteriores.
+- Resultados: Planos de ação sugeridos para aproveitar oportunidades de crescimento ou para conter possíveis quedas.
+- Ferramentas Utilizadas
+- Modelagem e Previsão:
+   Modelos estatísticos de média móvel, tendência, sazonalidade e regressão.
+- Visualização:
+  Gráficos interativos para facilitar a compreensão e comunicação dos insights no Google Sheets.
 
 
 
