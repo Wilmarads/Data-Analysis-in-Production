@@ -64,6 +64,7 @@ Distribuições de Variáveis: Análise de distribuição de dados relevantes, c
 - Tendências Temporais: Comportamento dos principais KPIs ao longo do tempo.
 - Segmentação: Análise por categorias, localidade, tempo, dias da semana e meses.
 - Resultados: Identificação dos períodos de alta e baixa, itens com maior e menor popularidade.
+  
 ####2. Análise Diagnóstica
 - Objetivo: Investigar as causas dos padrões identificados na análise descritiva.
 - Método: Aplicação de análises correlacionais e testes de hipóteses para validar relações entre variáveis.
